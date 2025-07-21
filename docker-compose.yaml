@@ -1,0 +1,20 @@
+services:
+  web-server:
+    build: .
+    image: gerasimova-web
+    container_name: business-card
+    # environment:
+    #   - VIRTUAL_HOST: "ntg-bc.pulpudev.com"
+    #   - LETSENCRYPT_HOST: "ntg-bc.pulpudev.com"
+    networks:
+      - net
+    ports:
+      - "80:80"
+
+    restart: unless-stopped
+
+networks:
+  ntg_net:
+    external: false
+  net:
+    external: true
