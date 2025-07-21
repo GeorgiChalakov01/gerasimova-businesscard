@@ -3,9 +3,9 @@ services:
     build: .
     image: gerasimova-web
     container_name: business-card
-    # environment:
-    #   - VIRTUAL_HOST: "ntg-bc.pulpudev.com"
-    #   - LETSENCRYPT_HOST: "ntg-bc.pulpudev.com"
+    environment:
+      VIRTUAL_HOST: "ntg-bc.pulpudev.com"
+      LETSENCRYPT_HOST: "ntg-bc.pulpudev.com"
     networks:
       - net
     ports:
