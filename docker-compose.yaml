@@ -8,8 +8,6 @@ services:
       LETSENCRYPT_HOST: "ntg-bc.pulpudev.com"
     networks:
       - net
-    ports:
-      - "80:80"
 
     restart: unless-stopped
 
