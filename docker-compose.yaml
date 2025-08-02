@@ -6,6 +6,8 @@ services:
     environment:
       VIRTUAL_HOST: "ntg-bc.pulpudev.com"
       LETSENCRYPT_HOST: "ntg-bc.pulpudev.com"
+    ports:
+      - 80:80
     networks:
       - net
 
